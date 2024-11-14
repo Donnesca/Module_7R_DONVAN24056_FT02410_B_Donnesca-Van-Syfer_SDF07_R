@@ -1,15 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donnesca Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/devdon.png" alt="profile photo of myself" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#Work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Donnesca Van Syfer</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Software dev</p>
+      <img
+        src="images/image1.jpg"
+        alt="picture of donnesca"
+        class="intro__img"
+      />
+    </section>
 
-    </head>
-    <body>
-        
-    </body>
+    <!--My services-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">
+        What I am currently doing
+      </h2>
+      <div class="services">
+        <div class="service">
+          <h3>Software Dev + EEM</h3>
+          <p>
+            I am currently enrolled into a coding bootcamp for 6 months at a
+            certified school named Codespace. Where I will be learning how to
+            code and learn coding languages. I freelance in egineering as well.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Engineering Skill set</h3>
+          <p>
+            My skill set in Software development is still very limited but
+            everyday, I strive to improve my performancev extensively. When it
+            comes to EEM. I provide an extensive service. I specilize in
+            mechanical diagnosis as well.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Music Class</h3>
+          <p>
+            I provide private Violin and Viola beginner classes for all ages.
+            This includes theory classes and music lessons.
+          </p>
+        </div>
+      </div>
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!--About me-->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Student Software developer and Earthmoving Equipment Mechanic
+      </p>
+      <div class="about-me__body">
+        <p>
+          I am from a small town in the Northen Cape called De Aar, but I have
+          been in Cape Town all my life. I started Primary school at Hazeldene
+          Primary in Mitchels Plain. I then moved with my parents to Silversands
+          in Blue Downs where I attended Silversand Primary from grade 2. This
+          is where I spend my whole childhood. After I finished primary school I
+          attended Kuils River Technical High, matriculated in 2016. After I
+          landed my first job my patner and I bought ourselves an aparment, and
+          that is where I currently reside.
+        </p>
+        <p>
+          My skil set started in grade 3. Where I started playing trumpet at
+          Hugo Lambrecht. I then transitioned to Violin and Viola whiched I
+          played at the music school until I completed high school. I then left
+          Hugo Lambrecht because I got a job in 2017. In 2018 I started my EEM
+          apprenticeship. I studied and worked for Barloworld equipment for 3
+          years. I decided I want to change careers and now I am here!
+        </p>
+      </div>
+
+      <img src="images/image.jpg" alt="me standing" class="about-me__img" />
+    </section>
+
+    <!--My Work-->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selction of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!--Portfolio item 1-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg"
+            alt="screen with html page"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!--Portfolio item 2-->
+        <a href="#" class="portfolio__item">
+          <img src="images/violin&sax.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!--Portfolio item 3-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/violin.jpg"
+            alt="violin and sheet music"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!--Portfolio item 4-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/vernier.jpg"
+            alt="a vernier"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!--Portfolio item 5-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/engine.jpg"
+            alt="8 cylinder diesel engine"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!--Portfolio item 6-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/washbay.jpg"
+            alt="ee machine in washbay"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!--Portfolio item 7-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/micrometer.jpg"
+            alt="a micrometer"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!--Portfolio item 8-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/dayinthelife.jpg"
+            alt="machinery and tablemountain"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!--Portfolio item 9-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/skitsteer.jpg"
+            alt="skitsteer with ice and cooldrink"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!--Portfolio item 10-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="images/mikhail-fesenko-p6YWrjhmjhM-unsplash.jpg"
+            alt="desktop screen"
+            class="portfolio__img"
+        /></a>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <a href="mailto:georgelinevansyfer@gmail.com" class="footer__link"
+        >georgelinevansyfer@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://dribble.com"
+            ><i class="fab fa-dribbble"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>
